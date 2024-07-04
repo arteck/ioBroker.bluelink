@@ -1,184 +1,58 @@
 {
   "common": {
     "name": "bluelink",
-    "version": "2.2.6",
+    "version": "2.3.8",
     "news": {
-      "2.2.6": {
-        "en": "fix / extend clima & errorcounter"
+      "2.3.8": {
+        "en": "corr steerWheelHeat",
+        "de": "korr Steer Radauftrieb",
+        "ru": "угловое WheelHeat",
+        "pt": "direção de cor Heat de roda",
+        "nl": "corrostuur WheelHeat",
+        "fr": "tête de corbeille Chauffe-roue",
+        "it": "sterzo Rivestimento della ruota",
+        "es": "corr steer WheelHeat",
+        "pl": "korrsteel Koła Ciepło",
+        "uk": "стюардеси Колеса",
+        "zh-cn": "旋转方向盘 轮热"
       },
-      "2.2.2": {
-        "en": "Update dependencies"
+      "2.3.7": {
+        "en": "set default force_update to server",
+        "de": "set default force_update to server",
+        "ru": "настройка параметра force_update_",
+        "pt": "set default force_update to server",
+        "nl": "set default force_update to server",
+        "fr": "définir force_update par défaut au serveur",
+        "it": "set default force_update al server",
+        "es": "set default force_update to server",
+        "pl": "ustaw domyślny force _ update do serwera",
+        "uk": "встановити значення за замовчуванням_update на сервер",
+        "zh-cn": "设置默认强制值_ 更新到服务器"
       },
-      "2.2.1": {
-        "en": "Testrelease for 503 error"
+      "2.3.6": {
+        "en": "corr crash",
+        "uk": "збій",
+        "de": "korrektur crash",
+        "ru": "корр аварии",
+        "pt": "quebra de corrimento",
+        "nl": "vertaling:",
+        "fr": "corr crash",
+        "it": "crash del corpo",
+        "es": "colisión",
+        "pl": "cor crash",
+        "zh-cn": "意外事故"
       },
-      "2.2.0": {
-        "en": "Adding refresh stop if 12V battery is under 50%.",
-        "de": "Aktualisierungsstopp hinzufügen, wenn die 12V-Batterie unter 50% ist.",
-        "ru": "Добавление остановки обновления, если батарея 12 В менее 50%.",
-        "pt": "Adicionando parada de atualização se a bateria de 12 V estiver abaixo de 50%.",
-        "nl": "Verversingsstop toevoegen als de 12V-batterij minder dan 50% is.",
-        "fr": "Ajout d'un arrêt de rafraîchissement si la batterie 12V est inférieure à 50%.",
-        "it": "Aggiunta dell'arresto di aggiornamento se la batteria da 12 V è inferiore al 50%.",
-        "es": "Agregar parada de actualización si la batería de 12 V está por debajo del 50%.",
-        "pl": "Dodanie zatrzymania odświeżania, jeśli poziom naładowania akumulatora 12 V jest niższy niż 50%.",
-        "zh-cn": "如果 12V 电池电量低于 50%，则添加刷新停止。"
+      "2.3.2": {
+        "en": "force update only selected vin\n add buttons for force_refresh_from_server and force_refresh_from_car"
       },
-      "2.1.2": {
-        "en": "Update lib bluelinky",
-        "de": "Lib bluelinky aktualisiert",
-        "ru": "Обновить lib bluelinky",
-        "pt": "Atualizar lib bluelinky",
-        "nl": "Update lib bluelinky",
-        "fr": "Mettre à jour la bibliothèque bluelinky",
-        "it": "Aggiorna lib bluelinky",
-        "es": "Actualizar lib bluelinky",
-        "pl": "Zaktualizuj bibliotekę bluelinky",
-        "zh-cn": "更新库 bluelinky"
+      "2.3.1": {
+        "en": "see Readme"
       },
-      "2.1.0": {
-        "en": "Add Datapoints for doors etc",
-        "de": "Datenpunkte für Türen usw. hinzugefügt",
-        "ru": "Добавить точки данных для дверей и т. Д.",
-        "pt": "Adicionar pontos de dados para portas, etc.",
-        "nl": "Voeg datapunten toe voor deuren etc",
-        "fr": "Ajouter des points de données pour les portes, etc.",
-        "it": "Aggiungi punti dati per porte ecc",
-        "es": "Agregue puntos de datos para puertas, etc.",
-        "pl": "Dodaj punkty danych dla drzwi itp.",
-        "zh-cn": "为门等添加数据点"
+      "2.2.8": {
+        "en": "force update"
       },
-      "2.0.0": {
-        "en": "DATA POINTS HAVE CHANGED. Scripts have to be adapted. Added support for multiple cars, no manual VIN entry required. Added raw data points from API and EV Drive History (must be activated in the options).",
-        "de": "DATENPUNKTE SIND GEÄNDERT. Skripte müssen angepasst werden. Unterstützung für mehrere Autos hinzugefügt, keine manuelle VIN-Eingabe erforderlich. Rohdatenpunkte aus API und EV Drive History hinzugefügt (muss in den Optionen aktiviert werden).",
-        "ru": "ТОЧКИ ДАННЫХ ИЗМЕНИЛИСЬ. Скрипты нужно адаптировать. Добавлена поддержка нескольких автомобилей, ручной ввод VIN не требуется. Добавлены точки необработанных данных из API и истории EV Drive (необходимо активировать в настройках).",
-        "pt": "OS PONTOS DE DADOS MUDARAM. Os scripts devem ser adaptados. Adicionado suporte para vários carros, nenhuma entrada manual de VIN necessária. Adicionados pontos de dados brutos de API e EV Drive History (deve ser ativado nas opções).",
-        "nl": "DATA PUNTEN ZIJN GEWIJZIGD. Scripts moeten worden aangepast. Ondersteuning toegevoegd voor meerdere auto's, geen handmatige VIN-invoer vereist. Onbewerkte datapunten toegevoegd uit API en EV Drive History (moet worden geactiveerd in de opties).",
-        "fr": "LES POINTS DE DONNÉES ONT CHANGÉ. Les scripts doivent être adaptés. Ajout de la prise en charge de plusieurs voitures, aucune saisie manuelle du VIN n'est requise. Ajout de points de données brutes de l'API et de l'historique de conduite EV (doit être activé dans les options).",
-        "it": "I PUNTI DATI SONO CAMBIATI. Gli script devono essere adattati. Aggiunto il supporto per più auto, non è richiesta l'immissione manuale del VIN. Aggiunti punti dati grezzi dall'API e dalla cronologia di EV Drive (deve essere attivato nelle opzioni).",
-        "es": "LOS PUNTOS DE DATOS HAN CAMBIADO. Los guiones deben adaptarse. Se agregó soporte para varios autos, no se requiere entrada manual de VIN. Se agregaron puntos de datos sin procesar de API y EV Drive History (debe estar activado en las opciones).",
-        "pl": "ZMIENIŁY SIĘ PUNKTY DANYCH. Skrypty muszą zostać dostosowane. Dodano obsługę wielu samochodów, nie wymaga ręcznego wprowadzania numeru VIN. Dodano surowe punkty danych z API i historii napędu EV (należy aktywować w opcjach).",
-        "zh-cn": "数据点已更改。必须修改脚本。添加了对多辆车的支持，无需手动输入 VIN。添加了来自 API 和 EV Drive History 的原始数据点（必须在选项中激活）。"
-      },
-      "1.1.1": {
-        "en": "Bug fix vehicle location",
-        "de": "Fehlerbehebung Fahrzeugposition",
-        "ru": "Исправлена ошибка",
-        "pt": "Correção de bug",
-        "nl": "Bugfix",
-        "fr": "Correction d'un bug",
-        "it": "Risoluzione del problema",
-        "es": "Arreglo del fallo",
-        "pl": "Naprawa błędów",
-        "zh-cn": "错误修复"
-      },
-      "1.1.0": {
-        "en": "Bug fix",
-        "de": "Fehlerbehebung",
-        "ru": "Исправлена ошибка",
-        "pt": "Correção de bug",
-        "nl": "Bugfix",
-        "fr": "Correction d'un bug",
-        "it": "Risoluzione del problema",
-        "es": "Arreglo del fallo",
-        "pl": "Naprawa błędów",
-        "zh-cn": "错误修复"
-      },
-      "1.0.9": {
-        "en": "Add charge start/stop option",
-        "de": "Ladestart/-stopp-Option hinzufügen",
-        "ru": "Добавить опцию запуска / остановки зарядки",
-        "pt": "Adicionar opção de iniciar / parar carga",
-        "nl": "Start/stop-optie voor opladen toevoegen",
-        "fr": "Ajouter une option de démarrage/arrêt de charge",
-        "it": "Aggiungi l'opzione di avvio/arresto della carica",
-        "es": "Agregue la opción de inicio / parada de carga",
-        "pl": "Dodaj opcję rozpoczęcia/zatrzymania ładowania",
-        "zh-cn": "添加充电开始/停止选项"
-      },
-      "1.0.7": {
-        "en": "Fix for KIA Sorento (Diesel)",
-        "de": "Fix für KIA Sorento (Diesel)",
-        "ru": "Исправление для KIA Sorento (Diesel)",
-        "pt": "Correção para KIA Sorento (Diesel)",
-        "nl": "Oplossing voor KIA Sorento (Diesel)",
-        "fr": "Correction pour KIA Sorento (Diesel)",
-        "it": "Correzione per KIA Sorento (Diesel)",
-        "es": "Arreglo para KIA Sorento (Diesel)",
-        "pl": "Poprawka dla KIA Sorento (Diesel)",
-        "zh-cn": "修复起亚索兰托"
-      },
-      "1.0.6": {
-        "en": "Fix for server connection",
-        "de": "Fix für Serververbindung",
-        "ru": "Исправить подключение к серверу",
-        "pt": "Correção para conexão do servidor",
-        "nl": "Oplossing voor serververbinding",
-        "fr": "Correction de la connexion au serveur",
-        "it": "Correzione per la connessione al server",
-        "es": "Arreglo para la conexión del servidor",
-        "pl": "Naprawiono połączenie z serwerem",
-        "zh-cn": "修复服务器连接"
-      },
-      "1.0.5": {
-        "en": "Bug fix",
-        "de": "Fehlerbehebung",
-        "ru": "Исправлена ошибка",
-        "pt": "Correção de bug",
-        "nl": "Bugfix",
-        "fr": "Correction d'un bug",
-        "it": "Risoluzione del problema",
-        "es": "Arreglo del fallo",
-        "pl": "Naprawa błędów",
-        "zh-cn": "错误修复"
-      },
-      "1.0.4": {
-        "en": "Typo & Errorhandling",
-        "de": "Tippfehler & Fehlerbehandlung",
-        "ru": "Опечатка и обработка ошибок",
-        "pt": "Digitação e tratamento de erros",
-        "nl": "Typefout en foutafhandeling",
-        "fr": "Typo et gestion des erreurs",
-        "it": "Errore di battitura e gestione degli errori",
-        "es": "Error tipográfico y manejo de errores",
-        "pl": "Literówka i obsługa błędów",
-        "zh-cn": "错字和错误处理"
-      },
-      "1.0.3": {
-        "en": "Changes for PHEV",
-        "de": "Änderungen für PHEV",
-        "ru": "Изменения для PHEV",
-        "pt": "Mudanças para PHEV",
-        "nl": "Wijzigingen voor PHEV",
-        "fr": "Modifications pour PHEV",
-        "it": "Modifiche per PHEV",
-        "es": "Cambios para PHEV",
-        "pl": "Zmiany dla PHEV",
-        "zh-cn": "PHEV的变化"
-      },
-      "1.0.2": {
-        "en": "Add new lib and bug fix for stable repro",
-        "de": "Neue lib hinzugefügt und Fehlerbehebung für stable repro",
-        "ru": "Добавить новую библиотеку и исправить ошибку для стабильного воспроизведения",
-        "pt": "Adicionar nova lib e correção de bug para reprodução estável",
-        "nl": "Voeg nieuwe lib en bugfix toe voor stabiele repro",
-        "fr": "Ajouter une nouvelle bibliothèque et un correctif de bogue pour une reproduction stable",
-        "it": "Aggiunta di una nUVOa libreria e correzione di bug per la riproduzione stabile",
-        "es": "Agregue una nueva biblioteca y corrección de errores para una reproducción estable",
-        "pl": "Dodaj nową bibliotekę i poprawkę błędów dla stabilnej reprodukcji",
-        "zh-cn": "添加新的库和错误修复程序以实现稳定的再现"
-      },
-      "1.0.0": {
-        "en": "First stable version",
-        "de": "Erste stabile Version",
-        "ru": "Первая стабильная версия",
-        "pt": "Primeira versão estável",
-        "nl": "Eerste stabiele versie",
-        "fr": "Première version stable",
-        "it": "Prima versione stabile",
-        "es": "Primera versión estable",
-        "pl": "Pierwsza stabilna wersja",
-        "zh-cn": "第一个稳定版本"
+      "2.2.7": {
+        "en": "see readme"
       }
     },   
     "titleLang": {
@@ -229,7 +103,6 @@
     "compact": true,
     "connectionType": "cloud",
     "dataSource": "poll",
-    "materialize": true,
     "dependencies": [
       {
         "js-controller": ">=3.1.0"
@@ -251,10 +124,36 @@
     "brand": "K",
     "request": 100,
     "evHistory": true,
-    "stopRefreshUnder50": true,
+    "protectAgainstDeepDischarge": true,
     "errorCounter": 5,
     "language": "DE"
   },
+  "adminUI": {
+    "config": "materialize",
+    "tab": "materialize"
+  },
   "objects": [],
-  "instanceObjects": []
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "login to server",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }

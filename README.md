@@ -5,24 +5,76 @@
 [![Downloads](https://img.shields.io/npm/dm/iobroker.bluelink.svg)](https://www.npmjs.com/package/iobroker.bluelink)
 ![Number of Installations (latest)](https://iobroker.live/badges/bluelink-installed.svg)
 ![Number of Installations (stable)](https://iobroker.live/badges/bluelink-stable.svg)
-[![Dependency Status](https://img.shields.io/david/Newan/iobroker.bluelink.svg)](https://david-dm.org/Newan/iobroker.bluelink)
+![Test and Release](https://github.com/Newan/iobroker.bluelink/workflows/Test%20and%20Release/badge.svg)
+[![Translation status](https://weblate.iobroker.net/widgets/adapters/-/bluelink/svg-badge.svg)](https://weblate.iobroker.net/engage/adapters/?utm_source=widget)
+
 
 [![NPM](https://nodei.co/npm/iobroker.bluelink.png?downloads=true)](https://nodei.co/npm/iobroker.bluelink/)
 
-**Tests:** ![Test and Release](https://github.com/Newan/ioBroker.bluelink/workflows/Test%20and%20Release/badge.svg)
 
 ## bluelink adapter for ioBroker
 
-Adapter to control Hyundai or Kia vehicle
+Adapter to control Hyundai or Kia vehicle (until 2023)
 
-Discussion: https://forum.iobroker.net/topic/43592/adapter-hyundai-bluelink-oder-kia-uvo
+[Discussion](https://forum.iobroker.net/topic/43592/adapter-hyundai-bluelink-oder-kia-uvo)
 
-## Changelog
+[Login Infos](https://developers.kia.com/web/v1/kia/specification/account/account_authorize)
+
+[Wiki](https://github.com/Newan/ioBroker.bluelink/wiki)
 
 <!--
-  Placeholder for the next version (at the beginning of the line):
-  ### **WORK IN PROGRESS**
+    Placeholder for the next version (at the beginning of the line):
+
+    https://github.com/AlCalzone/release-script#usage
+    npm run release major -- -p iobroker license --all 0.9.8 -> 1.0.0
+    npm run release minor -- -p iobroker license --all 0.9.8 -> 0.10.0
+    npm run release patch -- -p iobroker license --all 0.9.8 -> 0.9.9
+    npm run release prerelease beta -- -p iobroker license --all v0.2.1 -> v0.2.2-beta.0
+    ### **WORK IN PROGRESS**
 -->
+
+
+## Changelog
+### 2.3.8 (2024-02-25)
+* (arteck) corr steerWheelHeat
+
+### 2.3.7 (2024-02-04)
+* (arteck) set default force_update to server
+
+### 2.3.6 (2023-08-05)
+* (arteck) corr crash
+
+### 2.3.5 
+* (arteck) add force_login button
+* (arteck) corr history bug
+
+### 2.3.4 (2023-07-19)
+* (arteck) clima control is redesigned
+
+### 2.3.3 (2023-07-19)
+* (arteck) charge_limit_fast and charge_limit_slow is now in control folder
+
+### 2.3.2 (2023-04-12)
+* (arteck) force update only selected vin
+* (arteck) add buttons for force_refresh_from_server and force_refresh_from_car
+
+### 2.3.1 (2023-04-10)
+* (arteck) io-package update
+
+### 2.3.0 (2023-04-10)
+* (arteck) force update
+* (stefan.cloer) force_update corr, lastInfoUpdate corr, typo corr
+* (arteck) add batteryControlState12V init is 60
+* (arteck) max requests set to 400
+* (arteck) vin id for force_refresh 
+* (arteck) positionURL
+
+### 2.2.7 (2023-03-07)
+* (arteck) fix / clima control
+* (arteck) force update add to admin
+* (devdev24) Fixed error causing dead on-board batteries
+* (arteck) door status is correct
+
 ### 2.2.6 (2022-11-04)
 * (arteck) fix / extend clima & errorcounter
 
@@ -70,7 +122,7 @@ Discussion: https://forum.iobroker.net/topic/43592/adapter-hyundai-bluelink-oder
 ## License
 MIT License
 
-Copyright (c) 2022 Newan <info@newan.de>
+Copyright (c) 2024 Newan <info@newan.de>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
